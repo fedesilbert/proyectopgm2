@@ -1,2 +1,9 @@
 let profileEdit = require('../views/profile-edit');
-let controller = {}
+let profileEditController = {
+
+
+
+
+    
+}
+module.exports = profileEditController;

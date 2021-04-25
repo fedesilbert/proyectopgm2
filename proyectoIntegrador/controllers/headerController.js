@@ -1,2 +1,10 @@
 let header = require('../views/headerLogueado');
-let controller = {}
+let headerController = {
+
+
+
+
+
+    
+}
+module.exports = headerController;

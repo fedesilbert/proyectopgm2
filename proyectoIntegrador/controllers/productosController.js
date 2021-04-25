@@ -1,2 +1,8 @@
 let product = require('../views/product');
-let controller = {}
+let productController = {
+
+
+
+    
+}
+module.exports = productController;

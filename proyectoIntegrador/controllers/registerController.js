@@ -1,2 +1,9 @@
 let register = require('../views/register');
-let controller = {}
+let registerController = {
+
+
+
+
+    
+}
+module.exports = registerController;

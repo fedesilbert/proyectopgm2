@@ -1,2 +1,9 @@
 let resultadoBusqueda = require('../views/search-result');
-let controller = {}
+let resultadoBusquedaController = {
+
+
+
+
+    
+}
+module.exports = resultadoBusquedaController;

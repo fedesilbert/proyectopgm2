@@ -1,2 +1,9 @@
 let profile = require('../views/profile');
-let controller = {}
+let profileController = {
+
+
+
+
+    
+}
+module.exports = profileController;
