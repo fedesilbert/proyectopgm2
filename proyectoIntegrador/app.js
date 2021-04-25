@@ -7,14 +7,13 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var header = require('./routes/header');
+var login = require('./routes/login');
 var routeProd = require('./routes/routeProd');
-var login = require('./routes/login')
-var productAdd = require('./routes/product-add')
-var profileEdit = require('./routes/profile-edit')
-var profile = require('./routes/profile')
-var register = require('./routes/register')
-var resultadoBusqueda = require('./routes/resultadoBusqueda')
+var productAdd = require('./routes/product-add');
+var profileEdit = require('./routes/profile-edit');
+var profile = require('./routes/profile');
+var register = require('./routes/register');
+var resultadoBusqueda = require('./routes/resultadoBusqueda');
 
 
 var app = express();
@@ -32,9 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.use('/header', header);
-app.use('/routeProd', routeProd);
 app.use('/login', login);
+app.use('/routeProd', routeProd);
 app.use('/product-add', productAdd );
 app.use('/profile-edit', profileEdit );
 app.use('/profile', profile );

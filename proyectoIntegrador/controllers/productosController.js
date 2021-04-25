@@ -1,5 +1,8 @@
 let product = require('../views/product');
-let productController = {
+const productController = {
+    main: function(){
+        return res.send(product.body)
+    }   
 
 
 
