@@ -1,2 +1,2 @@
-let resultadoBusqueda = require('../views/resultadoBusqueda');
+let resultadoBusqueda = require('../views/search-result');
 let controller = {}

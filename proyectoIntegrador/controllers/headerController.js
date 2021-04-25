@@ -1,2 +1,2 @@
-let header = require('../views/header');
+let header = require('../views/headerLogueado');
 let controller = {}
