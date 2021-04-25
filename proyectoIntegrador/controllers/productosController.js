@@ -1,4 +1,4 @@
-let product = require('../views/product');
+let product = require('../modules/products');
 const productController = {
     main: function(){
         return res.send(product.body)
