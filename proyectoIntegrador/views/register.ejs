@@ -5,15 +5,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link width="" rel="shortcut icon" href="./images/logo-mercado-liebre.jpg" />
+	<link width="" rel="shortcut icon" href="../public/images/logo-mercado-liebre.jpg" />
 
 	<title> Mercado Liebre Argentina</title>
 	<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../public/stylesheets/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="../public/stylesheets/app.css">
+	<link rel="stylesheet" href="../public/stylesheets/registro.css">
 </head>
 
 <body>
@@ -22,8 +23,8 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-5 col-md-2">
-					<a href="index.html" class="main-header_home-link">
-						<img src="./images/logo-mercado-liebre.svg">
+					<a href="" class="main-header_home-link">
+						<img src="../public/images/logo-mercado-liebre.svg">
 					</a>
 				</div>
 	
@@ -49,12 +50,12 @@
 	
 			<nav class="main-navbar">
 				<ul class="left-navbar">
-					<li><a href="index.html">Todos los productos</a></li>
+					<li><a href="">Todos los productos</a></li>
 					<!-- solo logueado <li><a href="">Cargar productos</a></li> -->
 				</ul>
 	
 				<ul class="right-navbar">
-					<!-- Solo logueado <li><a href="profile.html">
+					<!-- Solo logueado <li><a href="profile">
 								Nombre del usuario <i class="fas fa-user"></i>
 							</a>
 						</li>
@@ -66,11 +67,11 @@
 							</form>
 						</li> -->
 					<li>
-						<a href="register.html">Creá tu cuenta <i class="far fa-address-card"></i>
+						<a href="users/register">Creá tu cuenta <i class="far fa-address-card"></i>
 						</a>
 					</li>
 					<li>
-						<a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+						<a href="users/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
 					</li>
 				</ul>
 			</nav>
@@ -85,11 +86,24 @@
 				<h2 class="products-title">Registrate</h2>
 			</div>
 			<!-- Show the "ultimos" products -->
-			<h2 class="col-12"> <i>///////////////////////////////////////// <br> Acá va el formulario de registro. <br>
-			Debe cumplir con los puntos de la consigna y ser coherente con la tabla de la base de datos <br>
-			Eliminen estás líneas y coloquen el formulario. <br>
-			Recuerden todo lo que necesita tanto la etiqueta form como los campos input para operar correctamtente</i> <br>
-			////////////////
+			<h2 class="col-12"> <br> 
+				<form action="ejemplo.php" method="get">
+					<p>Mail: <input type="text" name="mail" size="40"></p>
+					<p>Contrasenia: <input type="password" name="contrasenia" size="40"></p>
+					<p>Nombre: <input type="text" name="nombre" size="40"></p>
+					<p>Apellido: <input type="text" name="apellido" size="40"></p>
+					<p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+					<p>Sexo:
+					  <input type="radio" name="hm" value="h"> Hombre
+					  <input type="radio" name="hm" value="m"> Mujer
+					  <input type="radio" name="hm" value="h"> Otro
+					</p>
+					<p>
+					  <input type="submit" value="Enviar">
+					  <input type="reset" value="Borrar">
+					</p>
+				  </form>
+				<br>
 			</h2>
 
 
