@@ -35,7 +35,8 @@ app.use('/product-add', productAdd );
 app.use('/profile-edit', profileEdit );
 app.use('/profile', profile );
 app.use('/resultadoBusqueda', resultadoBusqueda );
-
+app.use('/css', express.static(__dirname = 'public/stylesheets'))
+app.use('/img', express.static(__dirname = 'public/images'))
 
 
 
